@@ -26,6 +26,23 @@ document.getElementById('playAgain').addEventListener('click', resetGame);
 const button_state = Array.from(document.querySelectorAll('.rock, .paper, .scissors'));
 button_state.forEach(state => state.addEventListener('transitionend', removeTransition));
 
+tippy.setDefaultProps({delay: 300});
+
+tippy('.rock', {
+    content: 'A common mantra is “Rock is for Rookies” because males tend to lead with Rock. Rock is perceived as “strong” and forceful”, so guys tend to fall back on it',
+    sticky: true,
+})
+
+tippy('.paper', {
+    content: 'In competition play, scissors is thrown the least often. It gets delivered 29.6% of the time, so it slightly under-indexes against the expected average of 33.33%',
+    sticky: true,
+})
+
+tippy('.scissors', {
+    content: 'Play scissors as your opening move against experienced players. Rock is too obvious, so scissors is your safe move to win against paper or stalemate to itself',
+    sticky: true,
+})
+
 function removeTransition(e) {
     if (e.propertyName !== 'transform'|| e.target.classList.contains('shake')) return;
     e.target.classList.remove('button-clicked');
