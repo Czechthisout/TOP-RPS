@@ -12,6 +12,7 @@ Building on the first lesson from[WesBos's JavaScript30 program](https://github.
 
 ### 3. Tooltips (brought up from *Future Improvements* April 11th, 2023)
 I integrated [TippyJS](https://github.com/atomiks/tippyjs), a customizable tooltip library, to add enjoyable player education on top of the game buttons. It won't help playing the bot, but users of my RPS tool will soon be seen on ESPN Top 10 replays. I leveraged the quick-and-easy CDN links and got comfortable reading technical documentation for API calls. I won't tell you about the hours of reading I spent trying to make the tooltips from scratch with vanilla Javascript and CSS...
+[Tooltip content source](https://statmodeling.stat.columbia.edu/2007/05/21/how_to_win_at_r/)
 
 ## How to Play
 
